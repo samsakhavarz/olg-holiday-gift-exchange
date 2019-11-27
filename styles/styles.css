@@ -1,0 +1,276 @@
+   article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+   
+   .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+   
+   * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+        font-size:  62.5%;
+}
+
+
+
+   #snow_fall {
+       width: 100%;
+       height: 100vh;
+       background: #262626 url('../images/Secret-Santa-Background.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat:no-repeat;
+       
+   }
+
+  
+
+  
+   .background {
+       position:relative;
+   }
+
+   .text-box {
+       background-color: #ffffff;
+       width: 425px;
+       height: 425px;
+       border-radius: 50%;
+       position: absolute;
+       top: 8%;
+       left: 35%;
+       
+   }
+
+   .text-box p {       
+        text-align: center;  
+        padding: 20px;
+   }
+
+   .title {
+        font-family: 'Mountains of Christmas', cursive;
+        font-size: 4.5em;
+        font-weight: bold;
+        margin:1em 0 0 0 ;
+}
+
+.body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.6em;
+      margin: 0;
+      padding: 0;
+}
+
+p.body {
+        padding-top:0;
+        padding-bottom: 0.6em;
+}
+
+p.callout {
+        padding: 1.5em 3em 1em 3em;
+}
+
+
+
+
+   .slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+	        animation: slide-in-elliptic-top-fwd 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) ;
+}
+
+.bounce-in-top {
+	-webkit-animation: bounce-in-top 1.1s cubic-bezier(0.950, 0.050, 0.795, 0.035) 0.8s both;
+	        animation: bounce-in-top 1.1s cubic-bezier(0.950, 0.050, 0.795, 0.035) 0.8s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+
+
+ /**
+ * ----------------------------------------
+ * animation bounce-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-top {
+    0% {
+      -webkit-transform: translateY(-500px);
+              transform: translateY(-500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(-65px);
+              transform: translateY(-65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(-28px);
+              transform: translateY(-28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+  
+  
+
+   .snowman-dab {
+       position:absolute;
+       bottom: 3%;
+       right: 15%;     
+   }
+
+   .snowman-juggle {
+        position:absolute;
+        bottom: 3%;
+        right: 30%;     
+   } 
+
+   .snowman-jump {
+        position:absolute;
+        bottom: 7%;
+        right: 2%;
+   }
+
+   .snowman-dab img{
+       width: 200px;
+       height: auto;
+   }
+
+
+   
+
+
+
+   
+
+   footer {
+       background: black;
+       color: white;
+       font-size: 12px;
+       text-align: center;
+       padding: 10px 0;
+   }
+
+   footer a {
+       
+       text-decoration: none;
+       color: white;
+   }
